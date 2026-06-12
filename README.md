@@ -2,6 +2,12 @@
 
 AppScoper is a native macOS SwiftUI app for bulk VPP app scope management in Jamf Pro. It replaces the one-app-at-a-time workflow in the Jamf Pro UI with bulk operations across hundreds or thousands of apps.
 
+![](img/appscoper_app_list_720.png)
+
+![](img/appscoper_scoping_page_720.png)
+
+
+
 ## What it does
 
 AppScoper connects to your Jamf Pro instance and gives admins a fast, focused view of the entire VPP app catalog — iOS, iPadOS, tvOS, and macOS apps in one list. Select any number of apps and apply changes across the whole selection at once:
