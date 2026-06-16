@@ -1,6 +1,12 @@
-# AppScoper from Jamf Concepts
+# AppScoper
 
 AppScoper is a native macOS SwiftUI app for bulk VPP app scope management in Jamf Pro. It replaces the one-app-at-a-time workflow in the Jamf Pro UI with bulk operations across hundreds or thousands of apps.
+
+![](img/AppScoper-App-View.png)
+
+![](img/Appscoper-Settings-View.png)
+
+
 
 ## What it does
 
@@ -22,17 +28,17 @@ AppScoper supports two authentication modes, chosen on the login screen. The jou
 
 ## Feedback
 
-Send issues, feedback, or feature requests to **appscoper.app.feedback AT jamf DOT com**, or open an issue on this repository.
+Please send issues, feedback, or feature requests via email to appscoper.app.feedback at jamf, or open an issue on [GitHub](https://github.com/Jamf-Concepts/app-scoper/issues).
 
 ## Download
 
-Download the latest `.pkg` installer from [GitHub Releases](https://github.com/Jamf-Concepts/app-scoper/releases/latest) and run it to install AppScoper to your Applications folder.
+Download and install the latest `.pkg` installer from [GitHub Releases](https://github.com/Jamf-Concepts/app-scoper/releases/latest). The installer will place the AppScoper app in your Applications folder.
 
 ## Requirements
 
 - macOS 26 (Tahoe) or later
 - A Jamf Pro instance (cloud or on-prem)
-- Either an API Client with the AppScoper Role *or* a Jamf Pro user account in the AppScoper Auditors group (see Setup below)
+- Either an API Client with the AppScoper Role *or* a Jamf Pro user account in the AppScoper Auditors group (see required permissions below)
 
 ## Setup
 
@@ -67,7 +73,7 @@ From AppScoper's login screen, click **Configuration → Run Setup Wizard**.
 
 ### Auditor — Read-Only Account (recommended for stakeholders)
 
-The Auditor flow gives someone visibility into the app catalog with no ability to make changes. Each auditor gets their own Jamf Pro user account in an **AppScoper Auditors** user-group. AppScoper detects the read-only privilege set after login and hides every write control.
+Auditors are granted visibility into the app catalog but have no ability to make changes. Each auditor gets their own Jamf Pro user account in an **AppScoper Auditors** user-group. AppScoper detects the read-only privilege set after login and hides every write control.
 
 From an admin's AppScoper, click **Configuration → Run Auditor Wizard**.
 
